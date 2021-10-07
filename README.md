@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
 
-<img align="right" alt="GIF" src="./Prueba.gif" width="500" height="320" />
+<img align="center" alt="GIF" src="./Prueba.gif" width="500" height="350" />
 
 ## Development server
 
