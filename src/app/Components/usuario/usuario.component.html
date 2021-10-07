@@ -1,0 +1,47 @@
+
+<!-- <div>
+  <input type="text">
+  <input type="submit">
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of user">
+    <tr >
+      <td>{{item.usuId}}</td>
+      <td>{{item.nombre}}</td>
+      <td>{{item.apellido}}</td>
+    </tr>
+
+  </tbody>
+</table> -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button type="button" class="btn btn-outline-primary" (click)="consult()">Buscar</button>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-12">
+  <ejs-grid #grid [dataSource]='user' [allowPaging]="true" [pageSettings]='pageSettings'
+        [filterSettings]='filterOptions' [editSettings]='editSettings' [toolbar]='toolbarOptions'
+         [toolbar]='toolbar'  allowTextWrap='true' [allowFiltering]="true" >
+      <e-columns>
+          <e-column field='usuId' headerText='Id' width=90 isPrimaryKey='true'></e-column>
+          <e-column field='nombre' headerText='Nombre' width=150></e-column>
+          <e-column field='apellido' headerText='Apellido' width=150></e-column>
+      </e-columns>
+  </ejs-grid>
+</div>
+</div>
+
+</div>
